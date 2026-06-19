@@ -36,8 +36,8 @@ Satisfy Milestone 5 (E2E Verification & Polish) and remediate the Forensic Audit
 - Must pass the E2E tests and Forensic Auditor verdict.
 
 ## Current Parent
-- Conversation ID: 2ac9c9e2-570e-4f59-8d34-e03ec63a130d
-- Updated: 2026-06-19T11:53:00+01:00
+- Conversation ID: 6e7ea84e-1fc6-4b80-85e5-ae2c3f139894
+- Updated: 2026-06-19T12:08:00+01:00
 
 ## Key Decisions Made
 - Use the Explorer -> Worker -> Reviewer -> Challenger -> Auditor iteration loop.
@@ -48,18 +48,23 @@ Satisfy Milestone 5 (E2E Verification & Polish) and remediate the Forensic Audit
 | Explorer 1 | teamwork_preview_explorer | Analyze orchestrator & E2E tests | completed | 6a166222-2e2b-4eda-9c1c-d8a77bf64b4d |
 | Explorer 2 | teamwork_preview_explorer | Analyze orchestrator & E2E tests | completed | f59e335a-5a52-4531-82b8-396fc5811ce2 |
 | Explorer 3 | teamwork_preview_explorer | Analyze orchestrator & E2E tests | completed | b822329d-48fc-4d71-b425-80fcb00f660e |
-| Worker | teamwork_preview_worker | Refactor orchestrator & tests | in-progress | bdfc341c-38f1-48c2-a4f4-2309c489e8de |
+| Worker | teamwork_preview_worker | Refactor orchestrator & tests | completed | bdfc341c-38f1-48c2-a4f4-2309c489e8de |
+| Reviewer 1 | teamwork_preview_reviewer | Review refactored orchestrator & tests | pending | ac596bd8-d5ec-440e-a931-648ed1fa4120 |
+| Reviewer 2 | teamwork_preview_reviewer | Review refactored orchestrator & tests | pending | 9ae4d08c-e2ea-4eea-b36a-ea4f62506c14 |
+| Challenger 1 | teamwork_preview_challenger | Challenge and run verify tests | pending | 434ff14d-7e85-45cd-b0ef-bc5ff6d73640 |
+| Challenger 2 | teamwork_preview_challenger | Challenge and run verify tests | pending | 8939e836-5be4-469a-bb70-2696737da04c |
+| Forensic Auditor | teamwork_preview_auditor | Forensic audit for integrity | pending | 24977f14-57fc-43bb-beb1-a05552dc660e |
 
 ## Succession Status
 - Succession required: no
-- Spawn count: 4 / 16
-- Pending subagents: [bdfc341c-38f1-48c2-a4f4-2309c489e8de]
+- Spawn count: 9 / 16
+- Pending subagents: [ac596bd8-d5ec-440e-a931-648ed1fa4120, 9ae4d08c-e2ea-4eea-b36a-ea4f62506c14, 434ff14d-7e85-45cd-b0ef-bc5ff6d73640, 8939e836-5be4-469a-bb70-2696737da04c, 24977f14-57fc-43bb-beb1-a05552dc660e]
 - Predecessor: none
 - Successor: not yet spawned
 
 ## Active Timers
 - Heartbeat cron: task-39
-- Safety timer: task-60
+- Safety timer: task-151
 - On succession: kill all timers before spawning successor
 - On context truncation: run `manage_task(Action="list")` — re-create if missing
 

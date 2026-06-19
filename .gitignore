@@ -1,8 +1,28 @@
+# Dependencies
 node_modules/
+
+# Build outputs
 .next/
-.memfork/db.json
-.memfork/db.test.json
+out/
+dist/
+
+# Environment files
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+
+# MemForks runtime files
+.memfork/
+memfork/
+memfork/db.json
+memfork/db.test.json
+memfork/credentials.json
+memfork/*.local.json
+
+# Antigravity generated agent logs
+agents/auditor*/
+agents/challenger*/
+agents/reviewer*/
+agents/sub_orch*
