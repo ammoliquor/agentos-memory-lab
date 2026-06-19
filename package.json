@@ -1,0 +1,36 @@
+{
+  "name": "agentos-memory-lab",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "node --test-concurrency=1 scripts/run-e2e.js",
+    "test:tier1": "node --test-concurrency=1 scripts/run-e2e.js --tier 1",
+    "test:tier2": "node --test-concurrency=1 scripts/run-e2e.js --tier 2",
+    "test:tier3": "node --test-concurrency=1 scripts/run-e2e.js --tier 3",
+    "test:tier4": "node --test-concurrency=1 scripts/run-e2e.js --tier 4",
+    "verify": "node scripts/verify-project.js"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "lucide-react": "^0.468.0",
+    "reactflow": "^11.10.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "tailwind-merge": "^2.5.0",
+    "clsx": "^2.1.1",
+    "class-variance-authority": "^0.7.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0"
+  }
+}

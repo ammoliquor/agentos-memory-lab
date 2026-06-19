@@ -1,0 +1,5 @@
+## 2026-06-19T05:56:38Z
+Analyze the codebase, specifically lib/agents/orchestrator.ts, tests/e2e/tier3_combined.test.js, and tests/e2e/tier4_scenario.test.js, along with the Forensic Auditor integrity violation report at C:\Users\USER\antigravitycliproject\memfork\.agents\auditor_m5\handoff.md. Propose the exact changes needed to:
+1. Refactor MultiAgentOrchestrator in lib/agents/orchestrator.ts to remove all hardcoded scenario facts, construct distinct system prompts for the researcher, critic, and builder roles, recall branch facts, and query OpenAI via fetch when an API key is present. Support an optional llmProvider callback option in the constructor options.
+2. Refactor tests/e2e/tier3_combined.test.js and tests/e2e/tier4_scenario.test.js to instantiate MultiAgentOrchestrator with a custom mock llmProvider that returns the facts required for the tests.
+Write your analysis and proposed code changes to handoff.md in your working directory C:\Users\USER\antigravitycliproject\memfork\.agents\explorer_m5_1\ and send a completion message.
